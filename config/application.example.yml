@@ -3,3 +3,8 @@
 SENDGRID_PASSWORD: "qbjvwxqk"
 SENDGRID_USERNAME: "app26019577@heroku.com"
 DEVISE_SECRET_KEY: "834b159c758427203c9b92bb10b3d8cae7a6db176f5705c3de05c357faf2284184a1ea69baeefef670f8f56b65d123f59f0b65aaf8f2aad7ed364d02b198227d"
+AWS_SECRET_ACCESS_KEY: 'your credential here'
+development:
+  AWS_BUCKET: your credential here
+production:
+  AWS_BUCKET: your credential here
