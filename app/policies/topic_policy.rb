@@ -7,11 +7,11 @@ class TopicPolicy < ApplicationPolicy
   end
 
   def create?
-    user.present? && user.role?(:admin)
+    user.present?
   end
 
   def update?
-    create?
+    user.present? && (record.user == user || user.role?(:admin) || user.role?(:moderator))
   end
 
   def show?
